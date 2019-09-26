@@ -1,0 +1,98 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}O'Tableau | Messagerie{% endblock %}
+
+{% block content %}
+
+<div class="content_message">
+    <div class="message_head">
+        <a href="{{ path('conversation_index')}} "><i class="fas fa-angle-left"></i></a>
+        {% if conversation.userParticipate == app.user %}
+            <h1>{{conversation.userConsult}}</h1>
+        {% elseif conversation.userConsult == app.user %}
+            <h1>{{conversation.userParticipate}}</h1>
+        {% endif %}
+        <a href="{{ path('conversation_delete', {'id': id})}}"><i class="fas fa-trash" id="button_delete"></i></a>
+        {# {{ path('conversation_delete', {'id': conversation.id})}}  #}
+    </div>    
+        <div id="message_list">
+        {% for message in okToShow %}
+            {% if app.user == message.userPost %}
+            <div class="message">
+            {% else %}
+            <div class="message_2">
+            {% endif %}
+            <p>{{ message.content }}</p>    
+            </div>
+            
+        {% endfor %}
+        </div>
+    <div class="message_input">
+        <form id="field-form" class="message form">
+            <div class="field">
+                <label>Message</label>
+                <input type="hidden" id="conversation-id" name="id" value="{{ id }}">
+                <input type="hidden" id="current-user-id" name="id" value="{{ idUser }}">
+                <input id="field-message" rows="2"  placeholder="Votre message"></input>
+            </div>
+            <div id="buttons">
+                <button class="ui button" id="sub-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+
+{% block javascripts %}
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
+    <script src="{{ asset('js/jquery.simpleAccordion.min.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.myNav').simpleAccordion();
+        });
+    </script>
+    <script src="{{ asset('js/app.js')}}"></script>
+
+    <script>
+
+        const url = new URL('http://localhost:3000/hub');
+
+        url.searchParams.append('topic', 'http://monsite.com/ping/'+{{ id }});
+
+        const eventSource = new EventSource(url);
+        
+        eventSource.onmessage = e => {
+            
+            newData = JSON.parse(e.data);
+                
+            const div = document.getElementById('message_list');
+            const bubble = document.createElement('div');
+            if({{ idPost }}!=null && {{ idUser }} == {{ idPost }}){
+                bubble.className = 'message';
+            }else {
+                bubble.className = 'message_2';
+            }
+            
+            const message = document.createElement('p');
+            bubble.appendChild(message);
+
+            div.appendChild(bubble);
+
+            message.innerHTML = newData.message;
+
+            
+            
+        }  
+    
+    </script>
+    
+{% endblock %}

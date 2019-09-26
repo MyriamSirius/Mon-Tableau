@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}O'Tableau | Actualités{% endblock %}
+
+{% block content %}
+
+    <div class="content_actu">
+        <a class="actu_show_link" href="{{ path('actuality_index') }}"><i class="fas fa-angle-left"></i></a>
+        <div class="actu_show">
+            <h1>{{ new.title }}</h1>
+            <img src="/docs/{{ new.pictureUrl }}" alt="">
+            <p>{{ new.content }}</p>
+            <div>
+                <i class="far fa-clock"></i>
+                <span>Le {{ new.createdAt|date('d/m/Y') }}</span>
+            </div>
+        </div> 
+    </div>
+{% endblock %}

@@ -1,0 +1,4049 @@
+/* Pour fixer mon footer en bas de page, sur toute mes page */
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: gray
+}
+
+input,
+button {
+    outline: none;
+}
+
+
+/* HEADER PAGE VITRINE  */
+
+
+.header {
+    display: flex;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+.header div {
+    position: absolute;
+    right: 260px;
+    text-align: center;
+    padding-top: 3.5%;
+}
+
+.header div h1 {
+    font-size: 6em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Chilanka', cursive;
+}
+
+.header div a {
+    font-size: 2.7em;
+    background-color: #1A535C;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.header div p {
+    font-size: 6em;
+    margin-top: 15px;
+}
+
+
+/* CONTENT PAGE VITRINE */
+
+
+.content_vitrine {
+    background-color: #f4fdfd;
+    color: #1A535C;
+}
+.content_vitrine .welcome_title  {
+    font-size: 5em;
+    text-align: center;
+    padding-top: 7%;
+    font-weight: bold;
+}
+.content_vitrine h1  {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 7%;
+    font-weight: bold;
+}
+.content_vitrine .welcome_text  {
+    font-size: 2em;
+    padding: 8% 3%;
+    text-align: center;
+    line-height: 120%;
+}
+.content_vitrine p  {
+    font-size: 2em;
+    padding: 40px 20px;
+    text-align: center;
+    line-height: 120%;
+}
+.content_vitrine p span {
+    font-weight: bold;
+    
+}
+.content_vitrine table  {
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 3%;
+}
+.content_vitrine table tbody tr  {
+    border-bottom: 1px solid black;
+}
+.content_vitrine table tbody td  {
+    border-right: 1px solid black;
+    padding: 20px;
+}
+
+
+/* MAP PAGE VITRINE */
+
+
+.map_vitrine h1 {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 4em;
+}
+
+.map_vitrine img {
+    width: 90%;
+    margin: 5%;
+}
+
+.map_vitrine p {
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 1.8em;
+}
+
+.map_vitrine p i {
+    margin-right: 20px;
+    font-size: 2em;
+}
+
+
+/* FORM CONTACT PAGE VITRINE */
+
+
+
+.form_vitrine {
+    text-align: center;
+    margin-top: 20%;
+    padding-bottom: 50%;
+}
+.form_vitrine h1 {
+    font-size: 4em;
+    margin-bottom: 35px;
+}
+.form_vitrine div input {
+    width: 80%;
+    height: 90px;
+    font-size: 2.5em;
+    border: none;
+    padding-left: 10px;
+    margin-bottom: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+.form_vitrine div textarea {
+    width: 80%;
+    height: 350px;
+    font-size: 1.2em;
+    border: none;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+.form_vitrine form button {
+    font-size: 2.5em;
+    border: none;
+    padding: 15px;
+    background-color: #1A535C;
+    color: white;
+    border-radius: 7px;
+    
+}
+
+
+
+/* PAGE FORM LOGIN */
+
+
+.content_form_login {
+    background-color: #2C3840;
+    color: white;
+    height: 1745px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.content_form_login a i {
+    font-size: 7em;
+    color: white;
+    margin: 3%;
+
+}
+
+.content_form_login h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.content_form_login form p {
+    font-size: 3.5em;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+.content_form_login form input {
+    width: 80%;
+    height: 120px;
+    font-size: 2.5em;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid;
+    padding-left: 10px;
+    margin-left: 9%;
+    background-color: #515861;
+}
+
+.content_form_login form div {
+    width: 60%;
+    margin: 10% auto;
+    margin-bottom: 25%;
+
+}
+
+.content_form_login form div button {
+    border: none;
+    padding: 50px 200px;
+    font-size: 2.5em;
+    border-radius: 40px;
+    background-color: #2C3840;
+    border: 3px solid white;
+    color: white;
+}
+
+.content_form_login form a {
+    color: white;
+    font-size: 2em;
+    margin: 0 33%;
+}
+
+
+
+/* PAGE MENTION LEGAL */
+
+
+
+.content_mentionLegal {
+   background-color: #f4fdfd;
+}
+
+.link_reglement_mention {
+    text-align: center;
+    padding-top: 7%;
+    background-color: #f4fdfd;
+}
+
+.link_reglement_mention a {
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+    background-color: #02312b;
+    font-size: 3em;
+    border-radius: 7px;
+}
+
+.content_legal h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.content_legal p {
+    font-size: 1.2em;
+    margin: 2% 5%;
+}
+
+
+/* PAGE REGLEMENT */
+
+.content_reglement {
+    background-color: #f4fdfd;
+}
+
+.content_reglement h1 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.content_reglement p {
+    font-size: 1.2em;
+    margin: 2% 5%;
+}
+
+
+/* NAV  */
+
+.content_nav {
+    width: 100%;
+    background-color: #e6e5e5;
+    height: 210px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+.content_nav nav {
+    height: 210px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.content_nav nav ul {
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_nav nav ul a {
+    color: initial;
+}
+
+.content_nav nav ul a li {
+    font-size: 2em;
+    text-align: center;
+}
+
+.content_nav nav ul a li i {
+    font-size: 4em;
+    padding-bottom: 3%;
+}
+
+/* PAGE MDP OUBLIE */
+
+.password_forgotten {
+    height: 1745px;
+    background: #2c3840;
+}
+
+.password_forgotten a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.password_forgotten form  {
+    text-align: center;
+   
+}
+.password_forgotten form h1 {
+    font-size: 3em;
+    padding-top: 6%;
+    color: white
+}
+
+.password_forgotten form input {
+    width: 75%;
+    height: 70px;
+    border: none;
+    border: 2px solid;
+    font-size: 2em;
+    padding-left: 2%;
+    margin-top: 5%;
+    border-radius: 7px;
+}
+
+
+.password_forgotten form div button {
+    margin-top: 4%;
+    border: none;
+    font-size: 2em;
+    background-color: #2C3840;
+    padding: 2% 3%;
+    color: white;
+    border-radius: 7px;
+    border: 2px solid white;
+}
+
+/* PAGE CHANGEMENT MDP  */
+
+.password_reset {
+    height: 1745px;
+    background: #2c3840;
+}
+
+.password_reset form  {
+    text-align: center;
+   
+}
+.password_reset form h1 {
+    font-size: 3em;
+    padding-top: 10%;
+    color: white
+}
+
+.password_reset form input {
+    width: 75%;
+    height: 70px;
+    border: none;
+    border: 2px solid;
+    font-size: 2em;
+    padding-left: 2%;
+    margin-top: 5%;
+    border-radius: 7px;
+}
+
+
+.password_reset form div button {
+    margin-top: 4%;
+    border: none;
+    font-size: 2em;
+    background-color: #2C3840;
+    padding: 2% 3%;
+    color: white;
+    border-radius: 7px;
+    border: 2px solid white;
+}
+
+
+
+
+/* NAV STAFF */
+
+.content_nav_staff {
+    width: 100%;
+    background-color: #e6e5e5;
+    height: 210px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+.content_nav_staff nav {
+    height: 210px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.content_nav_staff nav ul {
+    height: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_nav_staff nav ul a {
+    color: initial;
+}
+
+.content_nav_staff nav ul a li {
+    font-size: 2em;
+    text-align: center;
+}
+
+.content_nav_staff nav ul a li i {
+    font-size: 3.5em;
+    padding-bottom: 7%;
+    color: #1A535C;
+}
+
+/* PAGE PROFIL */
+
+.content_profil {
+    background-color: #f4fdfd;
+}
+
+
+.nav_profil {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 250px;
+    padding: 0 5% ;
+    background-color: #e6e5e5;
+    
+}
+
+.nav_profil .nav_profil_flex {
+    display: flex;
+    margin: 5% 0;
+    width: 65%;
+}
+
+.nav_profil .nav_profil_flex img {
+    width: 30%;
+    
+}
+
+.nav_profil .nav_profil_flex div {
+    margin-top: 5%;
+    margin-left: 3%;
+    text-align: initial;
+}
+
+.nav_profil .nav_profil_flex div p {
+    font-size: 3em;
+    margin-bottom: 5%;
+    color: #1A535C;
+    font-weight: bold;
+}
+
+.nav_profil .nav_profil_flex div span {
+    font-size: 2.5em;
+    color: #1A535C;
+}
+
+.nav_profil div {
+    margin-top: 9%;
+    text-align: center;
+}
+
+.nav_profil div a {
+    font-size: 2.5em;
+    color: white;
+    background-color: #1A535C;
+    padding: 15px 20px;
+    border-radius: 40px;
+}
+
+.button_compte_director {
+    position: relative;
+    top: -25%;
+    
+}
+
+
+.children_title {
+    font-size: 4em;
+    text-align: center;
+    padding-top: 10%;
+    color: #1A535C;
+}
+
+
+
+.profil_children {
+    width: 50%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    border-bottom: 2px solid #1A535C;
+}
+
+.profil_children a {
+    color: #2C3840;
+}
+
+.profil_children a i {
+    font-size: 8em;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    color: #1A535C;
+}
+
+.profil_children a h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+    color: #4ECDC4;
+}
+
+.profil_children a p {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: #4ECDC4;
+}
+
+.profil_doc {
+    padding-top: 15%;
+
+}
+
+.profil_doc h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.profil_doc div {
+    width: 60%;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-top: 3%;
+
+}
+
+.profil_doc div a {
+    color: #2C3840;
+    display: flex;
+    margin: 8% 0;
+    margin-left: 5%;
+}
+
+.profil_doc div a i {
+    font-size: 5.5em;
+    margin-right: 2%;
+}
+
+.profil_doc div a p {
+    font-size: 3em;
+    line-height: 190%;
+}
+
+.profil_doc_staff {
+    padding-top: 15%;
+    padding-bottom: 50%;
+}
+
+.profil_doc_staff h1 {
+    font-size: 4em;
+    text-align: center;
+    color: #1A535C;
+}
+
+.profil_doc_staff div {
+    width: 60%;
+    margin: auto;
+    border: 2px solid #1A535C;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+.profil_doc_staff div a {
+    color: #2C3840;
+    display: flex;
+    margin: 8% 0;
+    margin-left: 5%;
+}
+
+.profil_doc_staff div a i {
+    font-size: 5.5em;
+    margin-right: 2%;
+    color: #1A535C;
+}
+
+.profil_doc_staff div a p {
+    font-size: 3em;
+    line-height: 190%;
+    color: #1A535C;
+}
+
+.add_bulletin_staff {
+    height: 1500px;
+    background-color: #f4fdfd;
+}
+
+.add_bulletin_staff a i {
+    font-size: 6em;
+    padding: 5% 5%;
+}
+
+.add_bulletin_staff h2 {
+    text-align: center;
+    font-size: 3em;
+    color: #1A535C;
+}
+
+.add_bulletin_staff div {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 5%;
+}
+
+.add_bulletin_staff div a {
+    color:#4ECDC4;
+    font-weight: bold;
+
+}
+
+
+
+.profil_choice {
+    margin: 1%;
+    padding-bottom: 40%;
+    margin-top: 15%;
+}
+
+.profil_choice h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.profil_choice p {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.profil_choice p span {
+    font-weight: bold;
+}
+
+.alert_content {
+    background-color: #f4fdfd;    
+    
+}
+
+.alert_content h2{    
+    padding-top: 3%;
+    color: #4ECDC4;
+}
+
+.alert_content p{   
+    color: #4ECDC4;
+    padding-bottom: 3%;
+}
+
+.alert {
+    text-align: center;
+    font-weight: bold;
+    color: #4ECDC4;
+}
+
+
+
+/* PAGE PROFIL PROF/DIRECTEUR */
+
+.button_staff {
+    display: flex;
+    font-size: 2.5em;
+    justify-content: space-evenly;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+.button_staff div a {
+    background-color: #4ECDC4;
+    color: white;
+    padding: 20px 15px;
+    border-radius: 7px;
+}
+
+.profil_classe {
+    padding-top: 10%;
+    ;
+    padding-bottom: 5%;
+}
+
+.profil_classe h1 {
+    font-size: 4em;
+    text-align: center;
+    color: #1A535C;
+}
+
+.myNav {
+    width: 75%;
+    background-color: #e6e5e5;
+    color: white;
+    font-size: 4em;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+
+li.myNav-item.ui-accordion-item {
+    padding: 2%;
+}
+.myNav-item:not(:first-child) {
+    border-top: 3px solid white;
+    color: white;
+    padding: 2%;
+}
+
+.myNav-link {
+    display: block;
+    padding: 8px 10px;
+    color: #4ECDC4;
+}
+
+.myNav-content {
+    padding: 0 20px;
+    padding-bottom: 8px;
+    color: #4ECDC4;
+}
+
+.myNav-content p {
+    padding-top: 2%;
+    font-size: 0.5em;
+    color: dimgrey;
+}
+
+.myNav-content li {
+    padding-top: 3%;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.ui-accordion-content {
+    display: none;
+}
+
+.active>.ui-accordion-content {
+    display: block;
+}
+
+.alert_class_null {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+
+/* PAGE PROFIL/MON-COMPTE */
+
+.account {
+    padding-top: 5%;
+    padding-bottom: 40%;
+}
+
+.account a {
+    font-size: 5em;
+    margin-left: 5%;
+    color: black;
+}
+
+.account .account_border {
+    width: 75%;
+    border: 3px solid #1A535C;
+    position: relative;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 7%;
+    height: 750px;
+}
+
+.account .account_border h1 {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    height: 80px;
+    max-width: 100%;
+    background-color: #f4fdfd ;
+    color: #4ECDC4;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    padding: 0 10px 0 10px
+}
+
+.account .account_border div {
+    margin: 20% 10%;
+}
+
+.account .account_border div p {
+    font-size: 2.5em;
+    padding-bottom: 3%;
+}
+
+.account .account_border div p i {
+    margin-right: 3%;
+    color: #1A535C;
+}
+
+
+.account .account_border a {
+    font-size: 2.5em;
+    color: white;
+    background-color: #1A535C;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin-left: 14%;
+}
+
+/* PAGE PROFIL MON COMPTE EDIT */
+
+.account_update {
+
+}
+
+.account_update a i {
+    font-size: 6em;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.account_update form {
+    text-align: center;
+    margin-top: 5%;
+    padding-bottom: 50%;
+}
+
+
+.account_update form #user div label {
+    display: none;
+}
+
+.account_update form #user div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 80px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 3%;
+    color: #1A535C;
+}
+
+.account_update form #user div #user_communication_agreement {
+    display: none;
+}
+
+.account_update form #user div #user_image_agreement {
+    display: none;
+}
+
+.account_update form #user div #user_role {
+    display: none;
+}
+
+.account_update form #user div #user_Ajouter{
+    display: none;
+}
+
+
+
+.account_update form button {
+    font-size: 2em;
+    margin-top: 4%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A535C;
+    color: white;
+}
+
+
+
+/* PAGE PROFIL CHILDREN */
+
+
+.profil .children_back_profil {
+    color: #2C3840;
+}
+
+.profil .children_back_profil i {
+    font-size: 5em;
+    padding: 5% 5%;
+}
+
+.profil .doc_children_div {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.profil div .doc_children_link {
+    font-size: 2em;
+    color: white;
+    background-color: #1A535C;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.profil_children_detail {
+    width: 50%;
+    margin: auto;
+    margin-top: 7%;
+    padding-bottom: 5%;
+}
+
+.profil_children_detail {
+    color: rgb(143, 147, 150);
+}
+
+.profil_children_detail i {
+    font-size: 9em;
+    margin-left: 39%;
+    margin-bottom: 2%;
+    color: #1A535C;
+}
+
+.profil_children_detail h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1%;
+    font-weight: bold;
+    color: #4ECDC4;
+}
+
+.profil_children_detail p {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+.profil_doc_bulletin {
+    margin-top: 10%;
+    padding-bottom: 30%;
+    background-color: #f4fdfd;
+    height: 200px;
+}
+
+.profil_doc_bulletin div {
+    width: 60%;
+    margin: auto;
+    border: 2px solid #1A535C;
+    border-radius: 10px;
+    margin-top: 3%;
+
+}
+
+.profil_doc_bulletin div a {
+    color: #1A535C;
+    display: flex;
+    margin: 5%;
+    margin-left: 3%;
+}
+
+.profil_doc_bulletin div a i {
+    font-size: 5.5em;
+    margin-right: 2%;
+    color: #1A535C;
+}
+
+.profil_doc_bulletin div a p {
+    font-size: 2.4em;
+    line-height: 250%;
+}
+
+
+/* PAGE PROFIL CHILDREN DOCUMENT */
+
+.doc_children {
+    padding-top: 5%;
+    padding-bottom: 70%;
+    background-color: #f4fdfd; 
+}
+
+.doc_children a i {
+    font-size: 5em;
+    margin-left: 5%;
+    color: black;
+}
+
+.doc_children .doc_children_border {
+    width: 80%;
+    border: 3px solid #1A535C;
+    position: relative;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 7%;
+    height: 900px;
+}
+
+.doc_children .doc_children_border h1 {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    height: 80px;
+    max-width: 100%;
+    background-color: #f4fdfd;
+    color: #4ECDC4;
+    text-align: center;
+    font-size: 3.5em;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+}
+
+.doc_children .doc_children_border .add_doc_children {
+    margin-left: 80%;
+    margin-top: 7%;
+}
+
+.doc_children .doc_children_border div {
+    margin-top: 5%;
+}
+
+.doc_children .doc_children_border div a {
+    font-size: 3em;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.doc_children .doc_children_border div a i {
+    font-size: 2em;
+    color: #1A535C;
+}
+
+.doc_children .doc_children_border div a p {
+    margin-left: 2%;
+    line-height: 200%;
+    color: #1A535C;
+}
+
+/* PAGE DOC CHILDREN ADD */
+
+.doc_children h1 {
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 10%;
+    color: #1A535C;
+}
+
+.doc_children form {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.doc_children form #document div #document_name {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    color: #1A535C;
+}
+
+
+
+.doc_children form #document div #document_document_url {
+    font-size: 2em;
+    margin-top: 7%;
+    width: 70%;
+    background-color: white;
+    height: 50px;
+    color: #1A535C;
+    padding: 5px;
+}
+
+.doc_children form #document div #document_Ajouter {
+    font-size: 2em;
+    margin-top: 10%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A535C;
+    color: white;
+}
+
+
+/* PAGE CONVERSATION */
+
+.content_convo {
+    height: 1550px;
+    background: #f4fdfd;
+}
+
+.convo_head {
+    background-color: #1A535C;
+    padding: 7% 0;
+}
+
+.convo_head h1 {
+    font-size: 4em;
+    color: white;
+    margin-left: 5%;
+}
+
+.convo_list {
+    font-size: 3.5em;
+    padding-bottom: 20%;
+}
+
+.convo_list .convo_add {
+    position: fixed;
+    bottom: 15%;
+    right: 0;
+    padding-right: 5%;
+    color: #1A535C;
+}
+
+.convo_list .convo_add i {
+    font-size: 2em;
+
+}
+
+.convo_list div {
+    background-color: white;
+    padding: 5% 0;
+    display: flex;
+    margin-top: 2%;
+}
+
+.convo_list div i {
+    font-size: 2em;
+    margin-left: 5%;
+    color: #1A535C;
+}
+
+.convo_list div p {
+    line-height: 200%;
+    margin-left: 3%;
+    color: #1A535C;
+}
+
+
+/* PAGE NEW MESSAGE */
+
+label.required {
+    display: none;
+}
+
+.content_new-msg {
+    background-color: #f4fdfd;
+    height: 1550px;
+}
+
+.content_new-msg h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #1A535C;
+    font-weight: bold;
+}
+
+.content_new-msg a {
+
+}
+
+.content_new-msg a i {
+    font-size: 6em;
+    padding-top: 3%;
+    padding-left: 4%;
+}
+
+
+.content_new-msg form #message div #message_content {
+    height: 300px;
+    width: 80%;
+    font-size: 3em;
+    border-radius: 10px;
+    border: none;
+    margin-left: 7%;
+    margin-top: 10%;
+    background-color: white;
+    padding: 3%;
+}
+
+.content_new-msg form #message div #message_users {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+
+.content_new-msg form #message div #message_users input {
+    display: none;
+}
+
+.content_new-msg form #message div #message_users label {
+    font-size: 3em;
+    padding: 5%;
+}
+
+.content_new-msg form button {
+    font-size: 2em;
+    border: none;
+    padding: 3% 8%;
+    border-radius: 7px;
+    margin-top: 7%;
+    margin-left: 37%;
+    background-color: #1A535C;
+    color: white;
+}
+
+
+/* PAGE MESSAGE */
+
+.message_head {
+    display: flex;
+    justify-content: space-between;
+    font-size: 4em;
+    padding: 4% 0;
+    background-color: #1A535C;;
+    position: fixed;
+    right: 0;
+    left: 0;
+    color: white;
+}
+
+.message_head a {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.message_head i {
+    padding-left: 4%;
+    padding-right: 4%;
+    color:white;
+}
+
+
+#message_list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35%;
+    padding-top: 15%;
+    overflow: scroll;
+    font-size: 2em;
+}
+
+#message_list .message {
+    align-self: flex-end;
+    max-width: 60%;
+    margin: 2%;
+}
+
+#message_list .message p {
+    padding: 30px;
+    background-color: powderblue;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+}
+
+#message_list .message_2 {
+    align-self: flex-start;
+    max-width: 60%;
+    margin: 2%;
+}
+
+#message_list .message_2 p {
+    padding: 30px;
+    background-color: silver;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+
+.message_input {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 24%;
+    background-color: #1A535C;
+}
+
+.message_input form {
+    display: flex;
+    font-size: 3em;
+    justify-content: space-between;
+}
+
+.message_input form button {
+    border: none;
+    margin-right: 3%;
+    background-color: #1A535C;
+}
+
+.message_input form button i {
+    font-size: 5.7em;
+    margin-top: 22%;
+    color: white;
+
+}
+
+.message_input form #message div label {
+    display: none;
+}
+
+.message_input form #message div input {
+    height: 70px;
+    width: 110%;
+    border-radius: 40px;
+    margin-left: 8%;
+    margin-top: 3%;
+    font-size: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: none;
+}
+
+
+/* PAGE ACTUALITES */
+
+.content_actu {
+    padding-bottom: 120%;
+    background-color: #f4fdfd;
+}
+
+.flex_tags_actu {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.tag_all {
+    font-size: 3.5em;
+    background-color: #1A535C;
+    padding: 2% 1%;
+    border-radius: 3px;
+    height: 45px;
+    width: 20%;
+    text-align: center;
+    line-height: 75%;
+}
+
+.tag_all a {
+    color: white;
+}
+
+
+.menu {
+    background: #1A535C;
+    display: initial;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+  
+.menu .droite {
+    float: right;
+}
+
+.menu li ul {
+    display: none;
+    width: 100%;
+}
+
+.menu ul li a {   
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    background: #1A535C;
+    white-space: nowrap;
+    font-size: 3.5em;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.menu ul li a:hover {
+    background: #1A535C;
+}
+
+.menu li:hover ul {
+    /* Ici l’affichage du sous-menu */
+    display: block;
+    position: absolute;
+}
+
+.menu li:hover li {
+    float: none;
+}
+
+
+
+
+
+.content_actu h1 {
+    font-size: 4em;
+    width: 87%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid;
+    margin-top: 3%;
+    padding-bottom: 2%;
+    color: #1A535C;
+}
+
+.actu {
+    display: flex;
+    width: 87%;
+    margin: auto;
+    padding-top: 7%;
+    padding-bottom: 2%;
+}
+
+.actu img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.actu .actu_préShow {
+    overflow: auto;
+}
+
+.actu .actu_préShow h2 {
+    font-size: 3.5em;
+    margin-left: 4%;
+}
+
+.actu .actu_préShow p {
+    font-size: 2.2em;
+    margin-left: 6%;
+    margin-top: 6%;
+    width: 80%;
+    overflow: hidden;
+    height: 100px;
+}
+
+.actu .actu_préShow div {
+    display: flex;
+    margin-top: 10%;
+}
+
+.actu .actu_préShow div i {
+    font-size: 2.5em;
+    margin-left: 5%;
+}
+
+.actu .actu_préShow div span {
+    font-size: 1.9em;
+    margin-left: 2%;
+    line-height: 130%;
+    width: 60%;
+    border-bottom: 1px solid;
+    padding-bottom: 2%;
+}
+
+.alert_actuality {
+    font-size: 2.3em;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* PAGE ACTU SHOW */
+
+
+.content_actu .actu_show_link i {
+    font-size: 6em;
+    padding: 5% 5%;
+}
+
+.actu_show {
+    padding-bottom: 50%;
+}
+
+.actu_show img {
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 6%;
+    margin-top: 6%;
+    float: left;
+    margin-right: 3%;
+}
+
+.actu_show p {
+    margin-top: 6%;
+    margin-right: 3%;
+    margin-left: 6%;
+    color: #1A535C;
+}
+
+.actu_show div {
+    margin-top: 5%;
+    margin-left: 6%;
+}
+
+.actu_show div i {
+    padding: 5% 5%;
+    color: #1A535C;
+}
+
+.actu_show div span {
+    color: #4ECDC4;
+}
+
+/* PAGE ADD ACTUALITES */
+
+.add_actu_content {
+    padding-bottom: 40%;
+    background-color: #f4fdfd; 
+}
+
+.add_actu_content a i {
+    font-size: 6em;
+    margin-left: 5%;
+    padding-top: 5%;      
+}
+
+.add_actu_content h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 4em;
+    color: #1A535C;    
+}
+
+.add_actu_content form {
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.add_actu_content form #actuality div {
+    padding-bottom: 5%;
+}
+
+.add_actu_content form #actuality div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.add_actu_content form #actuality div #actuality_classroom label {
+    display: block;
+    font-size: 2.5em;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.add_actu_content form #actuality div #actuality_classroom input {
+    display: none;
+}
+
+.add_actu_content form #actuality div textarea {
+    padding-left: 2%;
+    padding-top: 2%;
+    font-size: 2em;
+    height: 150px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.add_actu_content form #actuality div #actuality_picture_url {
+    padding-top: 3%;
+    background-color: white;
+    color: #1A535C;
+}
+
+.add_actu_content form #actuality div #actuality_classroom  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+.add_actu_content form #actuality div #actuality_classroom label {
+    margin: 1%;
+}
+
+
+.add_actu_content form #actuality div #actuality_Ajouter {
+    font-size: 2em;
+    margin-top: 2%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A535C;
+    color: white;
+}
+
+
+/* FOOTER */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 200px;
+    background-color: #f4fdfd;
+}
+
+.footer p {
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer p a {
+    color: #02312b;
+}
+
+.footer p a:hover {
+    color: #02312b;
+}
+
+/* FOOTER VITRINE  */
+
+.footer_vitrine {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 0;
+}
+
+.footer_vitrine p {
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer_vitrine p a {
+    color: #02312b;
+}
+
+.footer_vitrine p a:hover {
+    color: #02312b;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!! BACK-END !!!!!!!!!!!!!!!!! */
+
+/* BACKEND INDEX */
+
+.backend_index {
+    background-color: #ffdada;
+    padding-bottom: 40%;
+}
+
+.backend_index a i {
+    font-size: 6em;
+    margin-left: 5%;
+    padding-top: 5%;
+    color: white;
+}
+
+.backend_index h1 {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 5%;
+    padding-top: 2%;
+    border-bottom: 2px solid white;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+    color: gray;
+    font-weight: bold;
+}
+
+
+.border_back_index {
+    width: 75%;
+    border: 3px solid gray;
+    position: relative;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 7%;
+    border-radius: 7px;
+    padding-bottom: 2%;
+}
+
+.border_back_index h2 {
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    height: 80px;
+    max-width: 100%;
+    background-color: #ffdada ;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    padding: 0 10px 0 10px
+}
+
+.border_back_index ul {
+    padding-top: 5%;
+    padding-left: 12%;
+}
+
+.border_back_index ul li {
+    margin: 8% 0;
+}
+
+.border_back_index ul li a {
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+
+/* BACKEND DOCUMENT */
+
+.backend_document {
+    background-color: #ffdada;
+}
+
+.backend_document a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_document .add_document {
+    padding-top: 5%;
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.backend_document .add_document h1 {
+    font-size: 3em;
+    text-align: center;
+    color: gray;
+}
+
+.backend_document form {
+    text-align: center;
+}
+
+.backend_document form #document div {
+    padding-top: 5%;
+}
+
+.backend_document form #document div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.backend_document form #document div #document_document_url {
+    padding-top: 2.5%;
+}
+
+.backend_document form #document div button {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.backend_document .list_document {
+    border-bottom: 3px solid gray;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 15%;
+}
+
+.backend_document .list_document h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 10%;
+    color: gray;
+}
+
+.backend_document .list_document div {
+    padding-left: 12%;
+    padding-top: 5%;
+}
+
+.backend_document .list_document div i {
+    font-size: 4em;
+    color: gray;
+}
+
+.backend_document .list_document div a {
+    font-size: 2em;
+}
+
+
+.backend_document .list_document_class {
+    padding-top: 10%;
+    padding-bottom: 40%;
+    width: 90%;
+    margin: auto;
+}
+
+.backend_document .list_document_class h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: gray;
+}
+
+.backend_document .list_document_class div {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.backend_document .list_document_class div a {
+    font-size: 2em;
+}
+
+
+.backend_document_show {
+    background-color: #ffdada;
+    padding-bottom: 100%;
+}
+
+.backend_document_show a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_document_show .show_document {
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 15%;
+}
+
+.backend_document_show .show_document p {
+    text-align: center;
+    font-size: 4em;
+    color: gray;
+}
+
+.backend_document_show .show_document div {
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 5%;
+    color: gray;
+    font-weight: bold;
+}
+
+.backend_document_show .show_delete_update {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7%;
+
+}
+
+.backend_document_show .show_delete_update form button {
+    border: none;
+    font-size: 2em;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 7px;
+    color: white;
+
+}
+
+.document_show_update {
+    background-color: #ffdada;
+    padding-bottom: 100%;
+}
+
+.document_show_update a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.document_show_update h1 {
+    font-size: 3em;
+    text-align: center;
+    color: gray;
+}
+
+
+.document_show_update form {
+    text-align: center;
+}
+
+.document_show_update form #document {
+
+}
+
+.document_show_update form #document div {
+    margin-top: 5%;
+}
+
+.document_show_update form #document div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.document_show_update form #document div #document_document_url {
+    padding-top: 3%;
+    color: white;
+}
+
+.document_show_update form #document div #document_Ajouter {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.backend_document_show_class {
+    background-color: #ffdada;
+    padding-bottom: 120%;
+}
+
+.backend_document_show_class a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_document_show_class h1 {
+    font-size: 4em;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 5%;
+    color: gray;
+}
+
+.backend_document_show_class div {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 3em;
+}
+
+
+.backend_document_children {
+    background-color: #ffdada;
+    padding-bottom: 120%;
+}
+
+.backend_document_children a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_document_children h1 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 5%;
+    color: gray;
+}
+
+.backend_document_children .document_children div {
+    font-size: 3em;
+    width: 75%;
+    margin: auto;
+    padding-top: 5%;
+    display: flex;
+    overflow: hidden;
+    color: gray;
+    line-height: 150%;
+}
+
+.backend_document_children .document_children div i {
+    font-size: 1.5em;
+    padding-right: 2%;
+}
+
+.backend_document_children .document_children_add {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 3em;
+}
+
+/* BACKEND ALERT */
+
+.backend_alert a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_alert .add_alert {
+    padding-top: 5%;
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.backend_alert .add_alert h1 {
+    font-size: 3em;
+    text-align: center;
+    color: gray;
+}
+
+
+.backend_alert .list_alert {
+   
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50%;
+}
+
+.backend_alert .list_alert h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15%;
+    color: gray;
+}
+
+.backend_alert .list_alert div {
+    padding-top: 5%;
+    text-align: center;
+
+}
+
+.backend_alert .list_alert div a {
+    font-size: 1.8em;
+}
+
+.backend_alert form {
+    text-align: center;
+    padding: 1%;
+}
+
+.backend_alert form #alert div {
+    padding-top: 5%;    
+}
+
+.backend_alert form #alert div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.backend_alert form #alert div button {    
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 7px;
+    background-color: gray;   
+    color: white; 
+}
+
+.show_delete_update form button {    
+    border: none;
+    font-size: 2em;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 7px;   
+    color: white; 
+    
+}
+
+.show_delete_update div {
+    display: flex;   
+    justify-content: center;    
+}
+
+.backend_alert_show  {
+    background-color: #ffdada;
+    padding-bottom: 110%;
+}
+
+
+.backend_alert_show a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_alert_show .show_alert {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 15%;
+}
+
+.backend_alert_show .show_alert p {
+    text-align: center;
+    font-size: 1em;
+    color: gray;
+}
+
+.backend_alert_show .show_alert h1 {
+    border-bottom: 2px solid gray;
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 10%;
+    color: gray;
+}
+
+.backend_alert_show .show_alert div {
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.alert_show_update  {
+    background-color: #ffdada;
+    padding-bottom: 110%;
+}
+
+.alert_show_update a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.alert_show_update h1 {
+    font-size: 3em;
+    text-align: center;
+    color: gray
+}
+
+
+.alert_show_update form {
+    text-align: center;
+}
+
+.alert_show_update form #alert div {
+    margin-top: 5%;
+}
+
+.alert_show_update form #alert div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.alert_show_update form #alert div #alert_Ajouter {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 7px;
+    background-color: gray;
+    color: white;
+}
+
+/* BACKEND ACTUALITES */
+
+
+.backend_actuality {
+    background-color: #ffdada;
+    padding-bottom: 110%;
+}
+
+.backend_actuality a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_actuality .add_actuality {
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.backend_actuality .add_actuality h1 {
+    font-size: 4em;
+    text-align: center;
+    color: gray;
+}
+
+
+.backend_actuality .list_actuality {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.backend_alert  {
+    background-color: #ffdada;
+    padding-bottom: 80%;
+}
+
+.backend_alert .list_actuality h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15%;
+    color: gray;
+}
+
+.backend_actuality .list_actuality div {
+    padding-top: 5%;
+    text-align: center;
+
+}
+
+.backend_actuality .list_actuality div a {
+    font-size: 1.8em;
+}
+
+.backend_actuality form {
+    text-align: center;
+    padding: 1%;
+}
+
+.backend_actuality form #actuality div {
+    padding-top: 5%;    
+}
+
+.backend_actuality form #actuality div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.backend_actuality form #actuality div button {    
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: beige;    
+}
+
+.backend_actuality_show  {
+    background-color: #ffdada;
+}
+
+.backend_actuality_show a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_actuality_show .show_actuality {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 15%;
+}
+
+.backend_actuality_show .show_actuality p {
+    text-align: center;
+    font-size: 1em;
+    color: gray
+}
+
+.backend_actuality_show .show_actuality h1 {
+    border-bottom: 2px solid gray;
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 10%;
+    color: gray;
+}
+.backend_actuality_show .show_actuality div {
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 50%;
+}
+
+.actuality_show_update  {
+    padding-bottom: 40%;
+    background-color: #ffdada;
+}
+
+.actuality_show_update a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.actuality_show_update h1 {
+    font-size: 3em;
+    text-align: center;
+    color: gray;
+}
+
+
+.actuality_show_update form {
+    text-align: center;
+}
+
+.actuality_show_update form #actuality div {
+    margin-top: 5%;
+}
+
+.actuality_show_update form #actuality div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.actuality_show_update form #actuality div #actuality_content {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 300px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.actuality_show_update form #actuality div #actuality_classroom input {
+   display: none;
+}
+
+.actuality_show_update form #actuality div #actuality_classroom label {
+    display: block;
+    font-size: 2.5em;
+    padding-top: 3%;
+    text-align: center;
+ }
+ 
+
+.actuality_show_update form #actuality div #actuality_Ajouter {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+/* BACKEND ELEVE */
+
+.backend_student {
+    background-color: #ffdada; 
+}
+
+.backend_student a i {
+    padding-bottom: 50%;
+}
+
+.backend_student a i {
+    padding-bottom: 50%;
+}
+
+.backend_student a i {
+    font-size: 6em;
+    padding: 5% 5%;
+}
+
+.backend_student form {
+    text-align: center;
+}
+
+.backend_student h1 {
+    text-align: center;
+    font-size: 4em;   
+    color: gray; 
+}
+
+.backend_student form #student div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.backend_student form #student div #student_birthdate #student_birthdate_month  {
+    font-size: 3em;
+    width: 20%;
+    height: 80px;
+    background-color: white;
+    border: none;
+    padding-left: 2%;
+    border-radius: 15px 0 0 15px;
+}
+
+.backend_student form #student div #student_birthdate #student_birthdate_month option  {
+    font-size: 0.3em;
+}
+
+.backend_student form #student div #student_birthdate #student_birthdate_day  {
+    font-size: 3em;
+    width: 20%;
+    height: 80px;
+    background-color: white;
+    border: none;
+    padding-left: 2%;
+}
+
+.backend_student form #student div #student_birthdate #student_birthdate_day option  {
+    font-size: 0.3em;
+   
+}
+
+.backend_student form #student div #student_birthdate #student_birthdate_year  {
+    font-size: 3em;
+    width: 20%;
+    height: 80px;
+    background-color: white;
+    border: none;
+    padding-left: 2%;
+    border-radius: 0 15px 15px 0;
+}
+
+.backend_student form #student div #student_birthdate #student_birthdate_year option  {
+    font-size: 0.3em;
+}
+
+.backend_student form #student div #student_classroom  {
+    width: 70%;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.8em;
+    background-color: white;
+    padding-left: 2%;
+}
+
+.backend_student form #student div #student_classroom option  {
+    font-size: 0.5em;
+}
+
+
+.backend_student form #student div #student_lunch_type {
+    width: 70%;
+    height: 70px;
+    border: none;
+    font-size: 2em;
+    padding-left: 2%;
+    border-radius: 7px;
+    background: white;
+}
+
+.backend_student form #student div #student_lunch_type option {
+    font-size: 0.5em;
+}
+
+
+.student_show_update form #student div #student_lunch_type {
+    width: 70%;
+    height: 70px;
+    border: none;
+    font-size: 2em;
+    padding-left: 2%;
+    border-radius: 7px;
+    background: beige;
+}
+
+.student_show_update form #student div #student_lunch_type option {
+    font-size: 0.5em;
+}
+
+.student_show_update i {
+    color: white;
+}
+
+
+
+.backend_student form #student div div input   {
+    display: none;
+}
+
+.backend_student form #student div #student_image_rights   {
+    display: none;
+}
+
+.backend_student form #student div #student_mondayLunch   {
+    display: none;
+}
+
+.backend_student form #student div #student_tuesdayLunch   {
+    display: none;
+}
+
+.backend_student form #student div #student_wednesdayLunch   {
+    display: none;
+}
+
+.backend_student form #student div #student_thursdayLunch   {
+    display: none;
+}
+
+.backend_student form #student div #student_fridayLunch   {
+    display: none;
+}
+
+.backend_student form #student div #student_user   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.backend_student form #student div #student_user label  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.backend_student form #student div #student_lunchtype   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.backend_student form #student div #student_lunchtype label  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.backend_student form #student div #student_person  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.backend_student form #student div #student_person label  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.backend_student form #student div #student_classroom   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.backend_student form #student div #student_classroom label  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.backend_student form #student div .label_image  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.backend_student form #student div   {
+    margin-top: 10%;
+}
+
+.backend_student form #student div .label_lunch  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+
+.backend_student form #student div button {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    margin-bottom: 5%;   
+    color: white;    
+}
+
+.backend_student i {
+    color: white;
+}
+
+.list_student {   
+    margin: auto;
+    padding-top: 10%;
+    text-align: center;
+    padding-bottom: 50%;
+    background-color: #ffdada;
+}
+
+.list_student h2 {
+    padding-top: 5%;    
+    font-size: 3em;
+    margin-left: 5%;
+    padding-bottom: 5%;
+    color: gray; 
+    border-top: 2px solid white;
+    width: 90%;
+}
+
+.list_student div i {
+    font-size: 4em;
+}
+
+ .list_student  a {
+    font-size: 2em;
+    color: black;
+}
+
+.list_student a p {
+    margin-bottom: 3%;
+}
+
+.backend_student_show {
+    background-color: #ffdada;
+    padding-bottom: 120%;
+}
+
+.backend_student_show i {
+   color: white;
+}
+
+.backend_student_show a i {
+    font-size: 6em;
+    padding: 5% 5%;
+}
+
+.backend_student_show .show_student {
+    border-bottom: 2px solid white;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 15%;    
+}
+
+.backend_student_show .show_student p {
+    text-align: center;
+    color: gray;
+    font-size: 4em;
+}
+
+.backend_student_show .show_student div {
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 5%;
+        
+}
+
+.backend_student_show div {
+    background-color: #ffdada;
+}
+
+.backend_student_show .show_delete_update {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7%;
+    background-color: #ffdada;
+}
+
+.backend_student_show .show_delete_update form button {
+    border: none;
+    font-size: 2em;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 7px;
+
+}
+
+
+
+
+
+
+
+
+.student_show_update {
+    padding-bottom: 50%;
+    background-color: #ffdada;
+}
+
+.student_show_update form #student div #student_birthdate #student_birthdate_month  {
+    font-size: 3em;
+    width: 20%;
+    height: 80px;
+    background-color: white; 
+    border: none;
+    padding-left: 2%;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.student_show_update form #student div #student_lunch_type {   
+    background-color: white;     
+}
+
+.student_show_update form #student div #student_birthdate #student_birthdate_month option  {
+    font-size: 0.3em;
+}
+
+.student_show_update form #student div #student_birthdate #student_birthdate_day  {
+    font-size: 3em;
+    width: 20%;
+    height: 80px;
+    background-color: white; 
+    border: none;
+    padding-left: 2%;
+}
+
+.student_show_update form #student div #student_birthdate #student_birthdate_day option  {
+    font-size: 0.3em;
+   
+}
+
+.student_show_update form #student div #student_birthdate #student_birthdate_year  {
+    font-size: 3em;
+    width: 20%;
+    height: 80px;
+    background-color: white; 
+    border: none;
+    padding-left: 2%;
+    border-radius: 0 15px 15px 0;
+}
+
+.student_show_update form #student div #student_birthdate #student_birthdate_year option  {
+    font-size: 0.3em;
+}
+
+.student_show_update form #student div #student_classroom  {
+    width: 70%;
+    height: 80px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.8em;
+    background-color: white;
+    padding-left: 2%;
+}
+
+.student_show_update form #student div #student_classroom option  {
+    font-size: 0.5em;
+}
+
+
+
+.student_show_update form #student div div input   {
+    display: none;
+}
+
+.student_show_update form #student div #student_image_rights   {
+    display: none; 
+}
+
+.student_show_update form #student div #student_mondayLunch   {
+    display: none;
+}
+
+.student_show_update form #student div #student_tuesdayLunch   {
+    display: none;
+}
+
+.student_show_update form #student div #student_wednesdayLunch   {
+    display: none;
+}
+
+.student_show_update form #student div #student_thursdayLunch   {
+    display: none;
+}
+
+.student_show_update form #student div #student_fridayLunch   {
+    display: none;
+}
+
+.student_show_update form #student div #student_user   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.student_show_update form #student div #student_user label  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.student_show_update form #student div #student_lunchtype   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.student_show_update form #student div #student_lunchtype label  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.student_show_update form #student div #student_person  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.student_show_update form #student div #student_person label  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.student_show_update form #student div #student_classroom   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.student_show_update form #student div #student_classroom label  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.student_show_update form #student div .label_image  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+
+.student_show_update form #student div .label_lunch  {
+    padding: 2%;
+    font-size: 1.5em;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+
+.student_show_update form #student div button {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    margin-bottom: 5%;    
+}
+
+
+/* BACKEND ROLE */
+
+.backend_role {
+    background-color: #ffdada;
+    padding-bottom: 100%;
+}
+
+.backend_role a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_role h1 {
+    font-size: 4em;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3%;
+    color: gray;
+    
+}
+
+.backend_role div div {
+    text-align: center;
+}
+
+.backend_role div div p {
+    font-size: 3em;
+    color: gray;
+}
+
+.backend_role div .edit_delete_back {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.backend_role div .edit_delete_back form  {
+    margin: 2% 3%;
+}
+
+.backend_role div .edit_delete_back form button {
+    padding: 15px;
+    background-color: gray;
+    color: white;
+}
+
+.backend_role .role_new {
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    
+}
+
+.backend_role .role_new a {
+    font-size: 3em;
+    background-color: gray;
+    color: white;
+    border-radius: 7px;
+    padding: 2% 3%;
+    
+}
+
+.backend_role_edit {
+    background: #ffdada;
+    padding-bottom: 110%;
+}
+
+.backend_role_edit a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_role_edit form {
+    text-align: center;
+}
+
+.backend_role_edit form #role div input {
+    width: 70%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    padding-left: 3%;
+    margin-top: 5%;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.backend_role_edit form button {
+    background-color: gray;
+    color: white;
+}
+
+.backend_role_new {
+    background-color: #ffdada;
+    padding-bottom: 120%;
+}
+
+.backend_role_new a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_role_new form {
+    text-align: center;
+}
+
+.backend_role_new form #role div input {
+    width: 70%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    padding-left: 3%;
+    margin-top: 5%;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.backend_role_new form button {
+    background-color: gray;
+    color: white;
+}
+
+
+
+
+
+
+
+/* BACKEND SCHOOL (ECOLE) */
+
+.student_show_update a i {
+    font-size: 6em;
+    padding: 5% 5%;
+}
+
+.student_show_update h1 {
+    color: gray;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.student_show_update form {
+    text-align: center;
+}
+
+
+.student_show_update form #student div {
+    margin-top: 10%;
+}
+
+.student_show_update form #student div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.student_show_update form #student div #student_document_url {
+    padding-top: 3%;
+}
+
+.student_show_update form #student div #student_Ajouter {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.backend_school_show  {
+    background-color: #ffdada;
+    padding-bottom: 100%;
+}
+
+.backend_school_show a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_school_show .show_school {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.backend_school_show .show_school p {
+    text-align: center;
+    font-size: 1em;
+    color: gray;
+}
+
+.backend_school_show .show_school h1 {
+    border-bottom: 2px solid gray;
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 10%;
+    color: gray;
+}
+.backend_school_show .show_school div {
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 5%;
+}
+.btn{
+    margin-top: 5%;
+    font-size: 2em;   
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+    color: white
+}
+
+.school_show_update form {
+    text-align: center;
+}
+
+.school_show_update form #school div {
+    margin-top: 5%;
+}
+
+.school_show_update form #school div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.backend_user {
+    background-color: #ffdada;
+}
+
+.backend_user a i {
+    padding-bottom: 50%;
+    color: white;
+}
+
+.backend_user a i {
+    font-size: 6em;
+    padding: 5% 5%;
+}
+
+.backend_user form {
+    text-align: center;
+}
+
+.backend_user h1 {
+    text-align: center;
+    font-size: 4em; 
+    color: gray;   
+}
+
+.backend_user form #user div {
+    padding-top: 7%;
+}
+
+.backend_user form #user div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.backend_user form #user div #user_communication_agreement {
+    display: none;
+}
+
+.backend_user form #user div #user_image_agreement {
+    display: none;
+}
+
+.backend_user form #user div .label_user_role  {
+    display: none;
+}
+
+.backend_user form #user div #user_role  {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 72%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.backend_user form #user div #user_role option  {
+    font-size: 0.5em;
+    
+}
+
+.backend_user form #user div .label_user {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+
+.backend_user form #user div button {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    margin-bottom: 5%;    
+    color: white
+}
+
+.backend_user .list_user {
+    border-top: 2px solid white;
+    width: 90%;
+    margin: auto;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.backend_user .list_user h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 5%;  
+    color: gray;  
+}
+
+.backend_user .list_user div i {
+    font-size: 4em;
+}
+
+.backend_user .list_user div a {
+    font-size: 2em;
+    
+}
+
+.backend_user .list_user div a  {
+    font-size: 2em;
+}
+
+.backend_user .list_user div a p  {
+    color: gray;
+}
+
+.backend_user .list_user {
+    padding-bottom: 50%;
+}
+
+.backend_user_show {
+    background-color: #ffdada;
+    padding-bottom: 80%;
+}
+
+.backend_user_show a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_user_show .show_user {
+    border-bottom: 2px solid white;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 15%;
+}
+
+.backend_user_show .show_user p {
+    text-align: center;
+    font-size: 4em;
+    color: gray;
+}
+
+.backend_user_show .show_user div {
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.backend_user_show .show_delete_update {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7%;
+}
+
+
+.backend_user_show .show_delete_update form button {
+    border: none;
+    font-size: 2em;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 7px;
+    color: white;
+}
+
+.user_show_update {
+    padding-bottom: 50%;
+    background-color: #ffdada;
+}
+
+.user_show_update a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.user_show_update h1 {
+    font-size: 3em;
+    text-align: center;
+    color: gray;
+}
+
+
+.user_show_update form {
+    text-align: center;
+}
+
+
+.user_show_update form #user div {
+    margin-top: 5%;
+}
+
+.user_show_update form #user div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.user_show_update form #user div #user_image_agreement {
+    display: none;
+}
+
+.user_show_update form #user div #user_communication_agreement {
+    display: none;
+}
+
+.user_show_update form #user div .label_user_role  {
+    display: none;
+}
+
+.user_show_update form #user div #user_role  {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 72%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.user_show_update form #user div #user_role option  {
+    font-size: 0.5em;
+    
+}
+
+.user_show_update form #user div .label_user {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 2em;
+}
+
+
+.user_show_update form #user div #user_Ajouter {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.backend_person  {
+    background-color: #ffdada;
+    padding-bottom: 50%;
+}
+
+.backend_person a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_person .add_person {
+    padding-top: 5%;
+    border-bottom: 2px solid white;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.backend_person .add_person h1 {
+    font-size: 4em;
+    text-align: center;
+    color: gray;
+}
+
+.list_class .crée_class {
+    text-align: center;
+    font-size: 4em;
+    padding: 3%;
+}
+
+
+.list_class .crée_class a {
+    color: white;
+    background-color: gray;
+    border-radius: 7px;
+    padding: 0.7%;
+}
+
+.show_delete_update {
+    text-align: center;
+    margin: 5%;
+}
+
+
+
+.backend_person_person h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.show_button_create  {
+    text-align: center;
+    background-color: gray;
+    width: 20%;
+    margin: auto;
+    padding: 2%;
+    margin-top: 5%;
+    border-radius: 7px;
+    
+}
+
+.show_button_create a  {
+    color: white;
+    font-size: 3.5em;
+}
+
+.show_delete_update .show_delete_update_flex {
+    display: flex;
+    padding-top: 2%;
+}
+
+.backend_person form {
+    text-align: center;
+    padding: 1%;
+}
+
+.backend_person form #person div {
+    padding-top: 5%;    
+}
+
+.backend_person form #person div input {
+    padding-left: 2%;
+    font-size: 2em;
+    height: 70px;
+    width: 70%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.backend_person form #person div button {    
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;    
+    color: white;
+}
+
+.backend_person_new {
+    background-color: #ffdada;
+    padding-bottom: 120%;
+}
+
+.backend_person_new a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_person_new form {
+    text-align: center;
+}
+
+.backend_person_new form #person div input {
+    width: 70%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    padding-left: 3%;
+    margin-top: 5%;
+    border-radius: 7px;
+    color: white;
+}
+
+.backend_person_new form button {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white    
+}
+
+
+
+.backend_classroom_edit a i {
+    font-size: 6em;
+    padding: 5% 5%;
+}
+
+.backend_classroom_edit form {
+    text-align: center;
+}
+
+.backend_classroom_edit form #person div input {
+    width: 70%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    border: 2px solid;
+    padding-left: 3%;
+    margin-top: 5%;
+    border-radius: 3px;
+}
+
+.backend_classroom_edit form button {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: beige; 
+}
+
+.backend_classroom_edit a i {
+    font-size: 6em;
+    padding: 5% 5%;
+}
+
+.backend_classroom_edit form {
+    text-align: center;
+}
+
+.backend_classroom_edit form #classroom div input {
+    width: 70%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    padding-left: 3%;
+    margin-top: 5%;
+    border-radius: 3px;
+    margin-bottom: 5%;
+    border-radius: 7px;
+    background: white;
+}
+
+.backend_classroom_edit form button {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray; 
+    color: white;
+}
+
+.backend_classroom_new  {
+    background-color: #ffdada;
+    padding-bottom: 120%;
+}
+
+.backend_classroom_new a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_classroom_new form {
+    text-align: center;
+}
+
+.backend_classroom_new form #classroom div input {
+    width: 70%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    padding-left: 3%;
+    margin-top: 5%;
+    border-radius: 3px;
+    color: white;
+    border-radius: 7px;
+}
+
+.backend_classroom_new form #classroom div label {
+    display: none;
+}
+
+.backend_classroom_new form #classroom div #classroom_user {
+    width: 73.5%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    padding-left: 3%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.backend_classroom_new form #classroom div #classroom_user option {
+    font-size: 0.5em;
+}
+
+
+.backend_classroom_new form button {
+    font-size: 2em;
+    margin-top: 3%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;    
+}
+
+.backend_classroom_edit {
+    background-color: #ffdada;
+    padding-bottom: 100%;
+}
+
+.backend_person_edit  {
+    background-color: #ffdada;
+    padding-bottom: 110%;
+}
+
+.backend_person_edit a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_classroom_edit a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.backend_person_edit form {
+    text-align: center;
+}
+
+.backend_person_edit form #person div input {
+    width: 70%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    padding-left: 3%;
+    margin-top: 5%;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.backend_classroom_edit form #classroom div label {
+    display: none;
+}
+
+.backend_classroom_edit form #classroom div #classroom_user {
+    width: 73.5%;
+    height: 70px;
+    font-size: 2em;
+    border: none;
+    padding-left: 3%;
+    margin-top: 5%;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.backend_classroom_edit form #classroom div #classroom_user option {
+    font-size: 0.5em;
+}
+
+.backend_classroom_edit form button {
+    font-size: 2em;
+    margin-top: 5%;
+    padding: 3% 5%;
+    border: none;
+    border-radius: 5px;
+    background-color: gray; 
+    color: white
+}
+
+/* BACKEND CALANDAR */
+
+
+.calandar_content {
+    background-color: #ffdada;
+    padding-bottom: 70%;
+}
+
+.calandar_content a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.calandar_content h1  { 
+    font-size: 3em;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    color: gray;
+    font-weight: bold;
+}
+
+.calandar_content .calendar_table tbody .calendar_table_dayname td   { 
+    height: 30px;
+}
+
+.calandar_content .calendar_table tbody .calendar_table_dayname td .calendar_column_title  { 
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.calandar_content .calendar_table tbody tr td  { 
+    height: 80px;
+
+}
+
+tr.calendar_table_dayname {
+    color: gray;
+}
+
+.calandar_content div .flex_calandar_navigation  {
+    display: flex;
+    font-size: 7em;
+    justify-content: center;
+    padding: 5% 2%;
+}
+
+.calandar_content div .flex_calandar_navigation a  {
+    margin: 0 5%;
+}
+
+.calandar_content .calendar_table {
+    width: 90%;
+    margin: auto;
+}
+
+.calandar_content .calendar_table td {
+    padding: 10px;
+    border: 1px solid grey;
+    color: gray;
+    font-weight: bold;
+}
+
+.calandar_content .calendar_table td p {
+    font-size: 1.1em;
+    line-height: 400%;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+}
+
+.calandar_content div .flex_calandar_navigation a button {
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 7px;
+    padding: 30px;
+    font-size: 0.3em;
+}
+
+
+.calandar_content .calendar_table--6weeks td {
+    height: 16.66%;
+    /* 100% / 6 semaines */
+}
+
+.calandar_content .calendar_column_title {
+    height: 2%;
+}
+
+.calandar_content .calendar_weekday {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.calandar_content .calendar_day {
+    font-size: 1.3em;
+}
+
+.calandar_content .calendar_othermonth .calendar_day {
+    opacity: 0.3;
+    font-size: 1em;
+}
+
+.calandar_content .calendar_student {
+    font-size: 2em;
+}
+
+.calandar_content .calendar_nav_profil__flex__col {
+    flex-direction: column;
+    /* margin: 5% 2%; */
+}
+
+.calandar_content .calendar_nav_profil_flex_col div p {
+    font-size: 1.5em;
+    /* margin-bottom: 5%; */
+}
+
+.calandar_content .calendar_nav_profil_flex_col div span {
+    font-size: 2.5em;
+}
+
+.calandar_content form table tbody tr td {
+    text-align: center;
+}
+
+.calandar_content form div .flex_calandar_navigation .valide_calandar {
+    font-size: 0.4em;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 2%;
+    text-align: center;
+}
+
+.case-verte {
+    background-color: white;
+}
+
+/* BACKEND CANTEEN */
+
+.backend_canteen {
+    background-color: #ffdada;
+    padding-bottom: 40%;
+}
+
+.backend_canteen a i {
+    font-size: 6em;
+    padding: 5% 5%;
+    color: white;
+}
+
+.canteen_back_nav h1 {
+    color: gray;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.canteen_back_nav_flex {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.5em;
+    padding-top: 3%;
+    margin: 5%;
+}
+
+.canteen_back_nav_flex_edit {
+    background: gray;
+    color: white;
+    padding: 1%;
+    border-radius: 7px;
+}
+
+.calendar__table_content {
+    background: white;
+    padding: 5%;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5%;
+    border-radius: 7px;
+}
+
+.calendar__table_content .calendar__table {
+    width: 100%;
+}
+
+.calendar__table_content .calendar__table caption{
+    font-size: 2.5em;
+    background: gray;
+    color: white;
+    padding: 1%;
+    width: 10%;
+    margin: auto;
+    border-radius: 7px;
+    margin-bottom: 5%;
+}
+
+.calendar__table_content .calendar__table tbody {
+
+}
+
+.calendar__table_content .calendar__table tbody .calendar__table__dayname {
+    font-size: 2em;
+    font-weight: bold;
+    color: gray;
+}
+.calendar__column__title {
+    padding-bottom: 10%;
+}
+
+.calendar__table_content .calendar__table tbody tr {
+    font-size: 2em;
+    color: gray;
+}
+
+
+.calendar__table_content .calendar__table tbody tr td {
+    padding-bottom: 3%;
+}
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* CLASS JQUERY */
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.display_none {
+    display: none;
+}
+
+
+

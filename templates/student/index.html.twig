@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}O'Tableau | {{ student.name }}{% endblock %}
+
+{% block content %}
+
+    <div class="content_profil">
+        <div class="nav_profil">
+            <div class="nav_profil_flex">
+                <img src="{{ asset('img/avatar-grey-blue.png') }}" alt="">
+                <div>
+                    <p>{{ app.user.name }} {{ app.user.firstname }} </p>
+                    <span>{{app.user.role.name }}</span>
+                </div>
+            </div>
+            <div>
+            {% if app.user.role.name == 'Direction' %}
+                <div class="button_compte_director">
+                    <a href="{{ path('user_myAccount') }}">Compte</a>
+                </div>
+                <div>
+                    <a href="{{ path('admin_default_index') }}">Gestion</a>
+                </div>
+            {% else %}
+                <a href="{{ path('user_myAccount') }}">Mon compte</a>
+            {% endif %}
+            </div>            
+        </div>
+        {% for child in app.user.students %}
+            {% if student == child %}             
+                 
+        <div class="profil">         
+            <a class="children_back_profil" href="{{ path('user_index') }}"><i class="fas fa-angle-left"></i></a>
+            <div class="profil_children_detail">
+                <i class="fas fa-user-graduate"></i>
+                <h2>{{ student.name }} {{ student.firstname }}</h2>
+                <p>Née le {{ student.birthdate|date('d/m/Y') }}</p>
+                <p>{{ student.classroom.name }}</p>
+            </div>
+            <div class="doc_children_div">
+                <a class="doc_children_link" href="{{ path('document_childrenDoc', { 'id': student.id }) }}">Documents de {{ student.name }}</a>                
+            </div>
+            <div class="profil_doc_bulletin">
+                <div>
+                 {% for document in schoolreport %}
+                    <a href="/docs/{{ document.documenturl }}">
+                        <i class="fas fa-file-pdf"></i>
+                        <p>{{ document.name }}</p>
+                    </a>
+                {% endfor %}  
+                </div>            
+                {% endif %}
+         {% endfor %}
+            </div>
+        </div>
+    </div>
+   
+
+{% endblock %}

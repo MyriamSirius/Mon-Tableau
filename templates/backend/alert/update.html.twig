@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<div class="alert_show_update">
+    <a href="{{ path('alert_index') }}"><i class="fas fa-angle-left"></i></a>
+    <h1>Modifier l'alerte</h1>
+    {{ form(form) }}
+</div>
+
+{% endblock %}
+{% block footer %}
+{% endblock %}

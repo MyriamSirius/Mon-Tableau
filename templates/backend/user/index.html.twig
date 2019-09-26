@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="backend_user">
+        <a href="{{ path('admin_default_index') }}"><i class="fas fa-angle-left"></i></a>
+        
+    <h1>Ajouter un Utilisateur
+    </h1>
+     {{ form(form) }}   
+
+    <div class="list_user">
+        <h2>Liste des utilisateurs</h2>
+    {% for user in users %}      
+
+     <a href="{{ path('admin_user_show', { 'id': user.id }) }}">   
+        <p>{{ user.name }} {{ user.firstname }}</p>
+    </a>
+   
+    {% endfor %}
+    </div> 
+
+{% endblock %}
+{% block footer %}
+{% endblock %}
