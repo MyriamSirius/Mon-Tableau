@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}O'Tableau | Présentation{% endblock %}
+
+{% block nav %}         
+{% endblock %}
+
+{% block content %}
+
+    <header class="header">
+        <a href="{{ path('default_index') }}"><img src="{{ asset('img/Banniere.png') }}" alt=""></a>
+        <div>
+            <h1>O'Tableau</h1>
+            {% if app.user %}
+                <a href="{{ path('app_logout') }}">Se deconnecter</a>
+                <a href="{{ path('user_index') }}">Mon Profil</a>
+            {% else %}
+                <a href="{{ path('app_login') }}">Se connecter</a>
+            {% endif %}
+            
+        </div>
+    </header>
+    <div class="content_vitrine">
+        <h1 class="animated infinite bounce delay-1s welcome_title">Bienvenue</h1>
+        <p class="welcome_text">
+            L'école <span>O'Tableau</span>  a été fondée dans le souci de transmettre aux enfants un enseignement complet intégrant :
+            L'intelligence, la personnalité et la créativité.
+        </p>
+
+        <h1>Horaires</h1>
+        <table>
+            <tr>
+                <td>Lundi</td>
+                <td>8h-12h ~ 13h-17h</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>8h-12h ~ 13h-17h</td>
+            </tr>
+             <tr>
+                <td>Mercredi</td>
+                <td>Fermer</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>8h-12h ~ 13h-17h</td>
+            </tr>
+             <tr>
+                <td>Vendredi</td>
+                <td>8h-12h ~ 13h-17h</td>
+            </tr>
+        </table>
+        <div class="map_vitrine">
+            <h1>Plan</h1>
+            <a href="https://www.google.fr/maps/dir//Groupe+Scolaire+La+Mare+L'Embuche,+12+Rue+d'Emery,+77184+%C3%89merainville/@47.1297346,3.380151,7z/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x47e60f82dc5d8e3f:0xb3cb9ff2b2a8bc02!3e0"><img src="{{ asset('img/map.png') }}" alt="#"></a>
+            <p><i class="fas fa-map-marker-alt"></i> Rue d'Emery - 77184 EMERAINVILLE</p>    
+            <p><i class="fas fa-envelope"></i> OTableau@ecole.io</p>
+            <p><i class="fas fa-phone-square-alt"></i> 01 23 45 67 89</p>
+        </div>
+
+        <div class="form_vitrine">
+            <h1>Contact</h1>
+
+            {{ form_start(form) }}
+                {{ form_widget(form) }}
+                <button class="btn">{{ button_label|default('Nous contacter') }}</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+    
+
+    <footer class="footer_vitrine">
+        <p><a href="{{ path('default_legalMention') }}">Mentions légales</a> | <a href="{{ path('default_reglement') }}">Règlement intérieur</a></p> 
+    </footer>
+    
+{% endblock %}
+
+{% block footer %}
+            
+{% endblock %}
+
+
+             
+           

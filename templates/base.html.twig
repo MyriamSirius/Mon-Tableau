@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}O'Tableau{% endblock %}</title>
+        {% block stylesheets %}
+
+            <script src="https://kit.fontawesome.com/092433016f.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('css/jquery-ui.min.css')}}">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+            <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+        {% endblock %}
+    </head>
+    <body>
+        {% block nav %}
+            {% include "navigation/_content_nav.html.twig" %}
+        {% endblock %}
+
+        {% block content %}{% endblock %}
+
+        {% block footer %}
+            {% include "navigation/_content_footer.html.twig" %}
+        {% endblock %}
+
+        {% block javascripts %}
+            <script
+                src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous">
+            </script>
+            <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
+            <script src="{{ asset('js/jquery.simpleAccordion.min.js')}}"></script>
+            <script>
+	            $(document).ready(function() {
+		            $('.myNav').simpleAccordion();
+	            });
+            </script>
+            <script src="{{ asset('js/app.js')}}"></script>
+        {% endblock %}
+    </body>
+</html>

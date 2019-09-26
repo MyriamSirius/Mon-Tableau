@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}O'Tableau | Mon compte{% endblock %}
+
+{% block content %}
+
+    
+    <div class="content_profil">
+        <div class="nav_profil">
+            <div class="nav_profil_flex">
+                <img src="{{ asset('img/avatar-grey-blue.png') }}" alt="">
+                <div>
+                    <p>{{ app.user.name }} {{ app.user.firstname }} </p>
+                    <span>{{app.user.role.name }}</span>
+                </div>
+            </div>
+            <div>
+            {% if app.user.role.name == 'Direction' %}
+                <div class="button_compte_director">
+                    <a href="{{ path('user_myAccount') }}">Compte</a>
+                </div>
+                <div>
+                    <a href="{{ path('admin_default_index') }}">Gestion</a>
+                </div>
+            {% else %}
+                <a href="{{ path('user_myAccount') }}">Mon compte</a>
+            {% endif %}
+            </div>            
+        </div>
+        <div class="account_update">
+            <a href="{{ path('user_myAccount') }}"><i class="fas fa-angle-left"></i></a>
+            {{ form_start(form) }}
+                {{ form_widget(form) }}
+                <button class="btn">Modifier</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+{% endblock %}

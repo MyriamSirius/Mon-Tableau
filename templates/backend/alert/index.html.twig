@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<div class="backend_alert">
+<a href="{{ path('admin_default_index') }}">
+    <i class="fas fa-angle-left"></i>
+</a>
+<div class="add_alert">
+    <h1>Ajouter un message d'alerte</h1>
+    {{ form(form) }}
+    </div>
+
+    <div class="list_alert">
+        <h2>Messages d'alerte</h2>
+        {% for alert in alerts %}
+            <div>
+                <div class="show_delete_update">
+                    <a href="{{ path('alert_show', { 'id': alert.id }) }}">
+
+                        {{ alert.title }}                        
+                        <div>
+                        <form method="post" action="{{ path('alert_update', {'id': alert.id}) }}">
+                            <input type="hidden" name="_method" value="UPDATE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('update' ~ alert.id) }}">
+                            <button class="btn">Modifier</button>
+                        </form>
+
+                        <form method="post" action="{{ path('alert_delete', {'id': alert.id}) }}" onsubmit="return confirm('Êtes vous sûr de vouloir supprimer ce document?');">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ alert.id) }}">
+                            <button class="btn">Supprimer</button>
+                        </form>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+{% block footer %}{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<div class="backend_document_children">
+    <a href="{{ path('documentClassroom_show', { 'id': classroom.id }) }}"><i class="fas fa-angle-left"></i></a>
+    <h1>Documents de {{ student.name }} {{ student.firstname }}</h1>         
+    <div class="document_children">
+        {% for document in student.documents %}
+        <div>
+            <i class="fas fa-file-pdf"></i>
+            <a href="{{ path('documentStudent_show', { 'id': document.id }) }}">{{ document.name }}</a>
+        </div>                                                         
+        {% endfor %}
+    </div>
+    <div class="document_children_add">
+        <a href="{{ path('document_adminAddchildrenDoc', { 'id': classroom.id, 'studentid': student.id  }) }}">Ajouter un document</a>
+    </div>
+</div>
+                                  
+{% endblock %}
+{% block footer %}
+{% endblock %}

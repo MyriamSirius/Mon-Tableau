@@ -1,0 +1,48 @@
+security:
+    encoders:
+        App\Entity\User:
+            algorithm: auto
+
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        sirius_super_provider:
+            entity:
+                class: App\Entity\User
+                property: username
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: true
+            provider: sirius_super_provider
+            guard:
+                authenticators:
+                    - App\Security\UserAuthenticator
+            logout:
+                path: app_logout
+                target: / #permet de definir la route vers laquelle rediriger lors de la deconnexion
+                # where to redirect after logout
+                # target: app_any_route
+
+            # activate different ways to authenticate
+            # https://symfony.com/doc/current/security.html#firewalls-authentication
+
+            # https://symfony.com/doc/current/security/impersonating_user.html
+            # switch_user: true
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+        - { path: ^/profil/admin, roles: ROLE_ADMIN }
+        - { path: ^/cantine, roles: ROLE_PROF }
+        - { path: ^/profil, roles: ROLE_PARENT }
+        - { path: ^/conversation, roles: ROLE_PARENT }
+        - { path: ^/actu, roles: ROLE_PARENT }
+        
+    
+
+    role_hierarchy:
+        ROLE_PARENT_ELU: ROLE_PARENT
+        ROLE_PROF: ROLE_PARENT_ELU
+        ROLE_ADMIN: ROLE_PROF
